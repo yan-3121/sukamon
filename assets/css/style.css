@@ -1,0 +1,850 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* 
+base-style
+*/
+
+body {
+    font-family:  'Noto Sans JP', sans-serif;
+    font-size: 17px;
+    color: #333333;
+}
+
+h1 , h2 , h3 , h4 , dl , dt , dd ,p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.inner-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 2% 40px 2%;
+    text-align: center;
+}
+
+.headline {
+    max-width: 366px;
+    margin: 0 auto 20px auto;
+}
+
+.headline > img {
+    width: 100%;
+}
+
+.balloon-txt {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+//base-style
+*/
+
+/*
+fade-in
+*/
+
+.fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*
+//fade-in
+*/
+
+/*
+fixed-btn
+*/
+
+.fixed-btn-pc {
+    display: block;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    max-width: 140px;
+    z-index: 1000;
+}
+
+.fixed-btn-pc > img {
+    width: 100%;
+}
+
+.fixed-btn-sp {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    max-width: 131px;
+    z-index: 1000;
+}
+
+.fixed-btn-sp > img {
+    width: 100%;
+}
+
+/*
+//fixed-btn
+*/
+
+/*
+back-to-top
+*/
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    max-width: 60px;
+    z-index: 1000;
+}
+
+.back-to-top > img {
+    width: 100%;
+}
+
+
+/*
+//back-to-top
+*/
+
+/*
+marker-animation
+*/
+ 
+.marker-animation.active{
+    background-position: -100% .5em;
+}
+ 
+.marker-animation {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-repeat: repeat-x;
+    background-size: 200% .8em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+
+/*
+//marker-animation
+*/
+
+/* 
+main-visual 
+*/
+
+.mainvisual-wrapper {
+    width: 100vw;
+}
+
+.mainvisual-wrapper > h1 {
+    max-width: 100%;
+}
+
+.mainvisual {
+    display: block;
+    max-width: 100%;
+}
+
+.mainvisual-sp {
+    display: none;
+}
+
+/* 
+//main-visual 
+*/
+
+/* 
+schedule 
+*/
+
+.schedule-wrapper {
+    width: 100vw;
+    background-color: #FF0000;
+    padding: 28px 2% 39px 2%;
+}
+
+.schedule-description {
+    max-width: 835px;
+    margin: 0 auto;
+}
+
+.schedule-description > img {
+    width: 100%;
+}
+
+/* 
+//schedule 
+*/
+
+/*
+how-to-participate
+*/
+.how-to-participate-outer {
+    background-color: #D8EFFC;
+}
+
+.participate-balloon {
+    position: relative;
+    display: inline-block;
+    margin: 24px 0;
+    padding: 23px 113px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #FFFFFF;
+    font-size: 23px;
+    background-color: #00A75B;
+}
+
+.participate-balloon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #00A75B;
+}
+
+.steps-outer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.steps-inner {
+    width: 30%;
+    padding: 2%;
+    background-color: #fff;
+    border: 3px dashed #333333;
+    border-radius: 10px;
+}
+
+.step-title {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 18px;
+    color: #00A75B;
+}
+
+.step-description {
+    text-align: left;
+}
+
+.join-button {
+    max-width: 494px;
+    margin: 61px auto 80px auto;
+}
+
+.join-button a > img {
+    width: 100%;
+}
+
+.get-point-balloon {
+    position: relative;
+    display: inline-block;
+    margin: 24px 0;
+    padding: 23px 113px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #FFFFFF;
+    font-size: 23px;
+    background-color: #008AD4;
+}
+
+.get-point-balloon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #008AD4;
+}
+
+.get-point-outer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.get-point-inner {
+    width: 64%;
+    padding: 2%;
+    background-color: #fff;
+    border: 3px dashed #333333;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.color-red {
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF0000;
+}
+
+.get-point-image {
+    max-width: 33%;
+}
+
+.get-point-image > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*
+//how-to-participate
+*/
+
+/* 
+how-to-participate-paper 
+*/
+
+.how-to-participate-paper-outer {
+    background-color: #FDEBC4;
+}
+
+.participate-paper-balloon {
+    position: relative;
+    display: inline-block;
+    margin: 24px 0;
+    padding: 23px 113px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #FFFFFF;
+    font-size: 23px;
+    background-color: #F39800;
+}
+
+.participate-paper-balloon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #F39800;
+}
+
+.participate-paper-txt {
+    margin-top: 16px;
+    padding: 2%;
+    background-color: #fff;
+    border: 3px dashed #333333;
+    border-radius: 10px;
+    text-align: left;   
+}
+
+/* 
+//how-to-participate-paper 
+*/
+
+/* 
+prize-list 
+*/
+
+.prize-list-outer {
+    background-color: #FADEEB;
+}
+
+.prize-list-balloon {
+    position: relative;
+    display: inline-block;
+    margin: 24px 0;
+    padding: 23px 113px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #FFFFFF;
+    background-color: #FF0000
+}
+
+.prize-list-balloon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #FF0000;
+}
+
+.prize-list-balloon > h3 {
+    font-size: 23px;
+}
+
+.prize-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prize-card {
+    max-width: 24%;
+    border: 1px solid #fff;
+    padding: 1%;
+    background-color: #fff;
+}
+
+.prize-card > img {
+    width: 100%;
+    border-radius: 10px;
+} 
+
+.prize-description {
+    margin-top: 8px;
+    padding: 8px 30px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #036EB8;
+}
+
+.number-of-winners {
+    font-size: 30px;
+    color: #00A75B;
+}
+
+.number-of-winners > span {
+    font-size: 80px;
+    line-height: .9;
+}
+
+.double-chance-balloon {
+    position: relative;
+    display: inline-block;
+    margin: 24px 0;
+    padding: 23px 113px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #FFFFFF;
+    background-color: #FF0000
+}
+
+.double-chance-balloon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #FF0000;
+}
+
+.double-chance-balloon span {
+    background-color: #fff;
+    border-radius: 25px;
+    color: #FF0000;
+    padding: 8px 23px;
+    margin-right: 14px;
+}
+
+.double-chance-text {
+    margin-top: 29px;
+    margin-bottom: 27px;
+}
+
+.akindo-gift {
+    max-width: 513px;
+    display: flex;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.akindo-gift dd {
+    background-color: #fff;
+    color: #00A75B;
+    padding: 20px 16px 12px 16px;
+}
+
+.akindo-gift dd span {
+    font-size: 80px;
+}
+
+.akindo-gift dt {
+    background-color: #FFEA00;
+    padding: 25px 58px 17px 58px;
+}
+
+.akindo-gift dt > span {
+    color: #FF0000;
+    font-size: 43px;
+}
+
+.double-chance-description {
+    text-align: left;
+    margin-top: 32px;
+}
+
+/* 
+//prize-list 
+*/
+
+/*
+what-is
+*/
+
+.what-is-outer {
+    background-color: #FDEBC4;
+}
+
+.what-is {
+    font-weight: bold;
+    font-size: 30px;
+    color: #FF0000;
+    margin: 49px 0 21px 0;
+}
+
+.what-is-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.what-is-content > img {
+    max-width: 406px;
+}
+
+.what-is-text {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    padding: 40px 2%;
+    background-color: #fff;
+    border: 3px dashed #333333;
+    border-radius: 10px;
+}
+
+.story-of-birth {
+    margin-top: 40px;
+}
+
+/*
+//what-is
+*/
+
+/*
+map
+*/
+
+.map-outer {
+    background-color: #D8EFFC;
+}
+
+.map-outer img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*
+//map
+*/
+
+/*
+footer
+*/
+
+footer {
+    background-color: #FDEBC4;
+}
+
+.organizer-name {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.tel-number {
+    display: block;
+    color: #333333;
+}
+
+.email {
+    display: block;
+    color: #333333;
+}
+
+.check-covid19-outer {
+    font-size: 30px;
+    max-width: 664px;
+    margin: 27px auto 32px auto;
+    padding: 25px 33px 19px 32px;
+    display: flex;
+    background-color: #68B0E2;
+    color: #FFFFFF;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.check-covid19-outer > figcaption {
+    line-height: 1;
+}
+
+.check-covid19-outer figcaption span {
+    font-size: 17px;
+}
+
+.check-covid19-outer > img {
+    max-width: 183px;
+    
+}
+
+.subsidaiary-aid {
+    max-width: 664px;
+    margin: 0 auto 15px auto;
+    padding: 19px 30px;
+    background-color: #AD7F46;
+    color: #fff;
+}
+
+/*
+//footer
+*/
+
+/*  
+SP
+*/
+
+@media screen and (max-width: 480px) {
+
+/* 
+base-style
+*/
+
+.inner-wrapper {
+    padding: 32px 5% 40px 5%;
+}
+
+
+/* 
+//base-style
+*/
+
+/*
+fixed-btn
+*/
+
+.fixed-btn-pc {
+    display: none;
+}
+
+.fixed-btn-sp {
+    display: block;
+}
+
+
+/*
+//fixed-btn
+*/
+
+/*
+back-to-top
+*/
+
+.back-to-top {
+    display: none;
+}
+
+
+/*
+mainvisual
+*/
+
+.mainvisual {
+    display: none;
+}
+
+.mainvisual-sp  {
+    display: block;
+    width: 100%;
+}
+
+/*
+//mainvisual
+*/
+
+/*
+how-to-participate
+*/
+
+.participate-balloon {
+    padding: 23px 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.steps-outer {
+    display: block;
+}
+
+.steps-inner {
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 20px;
+}
+
+.get-point-balloon {
+    padding: 23px 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.get-point-outer {
+    display: block;
+}
+
+.get-point-inner {
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 20px;
+}
+
+.get-point-image {
+    max-width: 100%;
+}
+
+/*
+//how-to-participate
+*/
+
+/*
+how-to-participate-paper
+*/
+
+.participate-paper-balloon {
+    padding: 23px 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.participate-paper-txt {
+    padding: 5%;
+}
+
+/*
+//how-to-participate-paper
+*/
+
+/*
+prize-list
+*/
+
+.prize-list-balloon {
+    padding: 23px 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.prize-list {
+    display: block;
+    padding: 0;
+}
+
+.prize-card {
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.double-chance-balloon {
+    padding: 23px 50px;
+    font-size: 18px;
+}
+
+.akindo-gift {
+    display: block;
+}
+
+/*
+//prize-list
+*/
+
+/*
+what-is
+*/
+
+.what-is-content {
+    display: block;
+}
+
+.what-is-content > img {
+    max-width: 100%;
+}
+
+.what-is-text {
+    padding: 40px 5%;
+}
+
+/*
+//what-is
+*/
+
+/*
+map
+*/
+
+.map-outer figure {
+    margin: 0;
+}
+
+/*
+//map
+*/
+
+/*
+footer
+*/
+
+.organizer-name {
+    font-size: 23px;
+}
+
+.organizer-address {
+    margin-left: 25px;
+    text-align: left;   
+}
+
+.tel-number {
+    margin-left: 25px;
+    text-align: left;
+}
+
+.email {
+    margin-left: 25px;
+    text-align: left;
+}
+
+.check-covid19-outer {
+    display: block;
+    font-size: 20px;
+}
+
+
+/*
+//footer
+*/
+
+}
+
+/*  
+//SP
+*/
